@@ -1,12 +1,12 @@
 // Seleciona a tag <p> com a classe "about-text"
 const aboutTextElement = document.querySelector('.about-text');
 
-// Define o texto com quebras de linha (\n representa a quebra de linha)
-const text = "DESENVOLVEDOR FULL STACK \n& WEB DESIGNER.";
+// Define o texto
+const text = "Analista de Excel\n& Desenvolvedor .";
 
 // Variáveis para controlar o índice do caractere e a velocidade da digitação
 let index = 0;
-const typingSpeed = 100; // Velocidade de digitação em milissegundos
+const typingSpeed = 50; // Velocidade de digitação em milissegundos
 
 // Função para "escrever" o texto letra por letra
 function typeWriter() {
@@ -19,11 +19,15 @@ function typeWriter() {
     }
     index++;
     setTimeout(typeWriter, typingSpeed); // Aguarda um tempo antes de escrever a próxima letra
+  } else {
+    // Após terminar de digitar, adiciona a classe de vibração
+    aboutTextElement.classList.add('shake');
   }
 }
 
 // Inicia a função de escrita
 typeWriter();
+
 
 
 
@@ -58,10 +62,7 @@ function toggleTheme() {
 themeToggleButton.addEventListener('click', toggleTheme);
 
 
-document.addEventListener('mousemove', function (e) {
-  const circle = document.createElement('div');
-  circle.classList.add('circle1');
-  document.body.appendChild(circle);
+
 
   const x = e.pageX; 
   const y = e.pageY; 
@@ -72,5 +73,4 @@ document.addEventListener('mousemove', function (e) {
   setTimeout(() => {
       circle.remove(); 
   }, 1000);
-});
 
