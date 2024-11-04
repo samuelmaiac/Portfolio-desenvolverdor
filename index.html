@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
 
 </head>
 
@@ -20,8 +24,9 @@
             </div>
             <ul class="menu">
                 <li><a href="#pagina-inicial">PÁGINA INICIAL</a></li>
+                <li><a href="#projeto">PROJETOS</a></li>
                 <li><a href="#contato">CONTATO</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#sobre-mim">SOBRE MIM</a></li>
                 <li><a href="#habilidades">SERVIÇOS</a></li>
             </ul>
         </nav>
@@ -36,11 +41,12 @@
 
             <!-- Conteúdo do menu -->
             <div class="menu-content">
-                <a href="#pagina-inicial">Início</a>
-                <a href="#sobremim">Sobre</a>
-                <a href="#habilidades">Habilidades</a>
+              <a href="#pagina-inicial">Início</a>
+                <a href="#projetos">Sobre Mim</a>
+                <a href="#habildades">Habilidades</a>
+                <a href="#servicos">Serviços</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+                <a href="#contato">Contatos</a>
             </div>
         </div>
                 <!-- Botão de alternância de tema -->
@@ -60,11 +66,13 @@
     <main>
         <section class="main-content" id="pagina-inicial">
             <div class="flex">
+                
+                </div>
                 <div class="circle">
                     <img src="samuel maia.png" alt="">
                 </div>
                 <div class="text-content">
-                    <h1>Samuel Maia</h1>
+                    <h3>Samuel Maia</h3>
                     <p class="about-text"></p>
                 </div>
             </div>
@@ -72,124 +80,120 @@
 
         <section id="habilidades">
             <div class="skills-container">
-                <div class="skills">
-                    <h2>Minhas Habilidades</h2>
-                    <div class="skill-icons">
-                        <img src="script-java.png" alt="JavaScript">
-                        <img src="mysql.png" alt="MySQL">
-                        <img src="figma.png" alt="figma">
-                        <img src="csharp.png" alt="C#">
-                    </div>
-                </div>
-                <div class="about-me" id="sobremim">
-                    <h2>UM POUCO SOBRE MIM:</h2>
+                <div class="about-me" id="sobre-mim">
+                    <h2>Quem sou eu:</h2>
                     <p>Oi!<br>Meu nome é Samuel Maia, tenho 17 anos<br> e sou estudante de TI.<br> Tenho como meta me tornar<br>
                     um profissional de destaque<br> e conquistar uma posição em<br> uma grande empresa, realizando assim<br>
                     meus sonhos.<br> Acredito firmemente que a tecnologia<br> tem o poder de transformar vidas, e estou<br>
                     motivado a aprender e me desenvolver<br> nessa área tão essencial em nosso dia a dia.</p>
                 </div>
-            </div>
-
-        </section>
-
-        <section id="projetos">
-            <div class="projects-section">
-                <h2>MEUS PROJETOS</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <a href="https://github.com/samuelmaiac"><img src="projeto1.png" alt="Projeto 1"></a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/samuelmaiac"> <img src="projeto2.png" alt="Projeto 2"></a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/samuelmaiac">  <img src="projeto3.png" alt="Projeto 3"></a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/samuelmaiac">  <img src="projeto4.png" alt="Projeto 4"></a>
-                    </div>
                 </div>
+                <div class="habilidades"></div>
+                        <div class="skills-container">
+                            <div class="skills">
+                                <h2>Minhas Habilidades</h2>
+                                <div class="skill-icons">
+                                    <img src="script-java.png" alt="JavaScript">
+                                    <img src="mysql.png" alt="MySQL">
+                                    <img src="figma.png" alt="figma">
+                                    <img src="csharp.png" alt="C#">
+                                </div>
             </div>
+            
+        </section>
+
+        
 
         </section>
 
-        <section class="form-section" id="contato">
-            <div class="form-container">
-                <h1>Contato</h1>
-                <form action="envia_formulario.php" method="POST">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
+        <section class="services-section" id="servicos">
+            <h1>SERVIÇOS</h1>
+            <div class="service">
+                <h2>Excel</h2>
+                <p>Sou especialista em Excel com 2 anos de experiência em análise de dados e automação de processos. </p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+            <div class="service">
+                <h2>Técnico em Montagem e Manutenção de Computadores</h2>
+                <p>Sou Técnico em Montagem e Manutenção de Computadores com 2 anos de experiência em montagem, configuração e reparação de hardware.</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="objetivos">Objetivos:</label>
-                        <input type="text" id="objetivos" name="objetivos">
-                    </div>
+            <div class="service">
+                <h2>Marketing</h2>
+                <p>Atividade de criar, comunicar, entregar e oferecer valor para os consumidores, clientes, parceiros e sociedade, através de produtos ou serviços.</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" required></textarea>
-                    </div>
+            <div class="service">
+                <h2>Web Designer</h2>
+                <p>Sou Web Designer com experiência na criação de sites e interfaces digitais que combinam estética e funcionalidade.</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="servico">Serviço Desejado:</label>
-                        <select id="servico" name="servico">
-                            <option value="servico1">Marketing</option>
-                            <option value="servico2">Designer Gráfico</option>
-                            <option value="servico3">Indentidade Visual</option>
-                            <option value="servico3">Designer De Interface</option>
-                            <option value="servico3">Video Maker</option>
-                        </select>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                </form>
+            <div class="service">
+                <h2>Designer Gráfico</h2>
+                <p>Sou Designer Gráfico em desenvolver soluções criativas e visuais que contam histórias e transmitem mensagens de maneira impactante.</p>
+            </div>
 
                 <div class="logo-container">
                     <img src="samuelmaia.png" alt="Thiago Bernardes">
                 </div>
             </div>
         </section>
-
-        <section class="services-section" id="servicos">
-            <h1>SERVIÇOS</h1>
-            <div class="service">
-                <h2>Marketing</h2>
-                <p>Ajuda marcas com estratégias personalizadas, oferecendo serviços super importantes na visibilidade,
-                    como criação de conteúdos, gestão de mídias sociais. Transformando seus sonhos em realidade!</p>
+        <section id="projetos">
+            <div class="projects-section">
+                <h2>MEUS PROJETOS</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <a href="https://github.com/samuelmaiac"><img src="projeto2.png" alt="Projeto 1"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/samuelmaiac"> <img src="projeto3.png" alt="Projeto 2"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/samuelmaiac">  <img src="projeto1.png" alt="Projeto 3"></a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/samuelmaiac">  <img src="projeto4.png" alt="Projeto 4"></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="service">
-                <h2>Designer Gráfico</h2>
-                <p>Ajuda a empresas e a marca crescer de forma personalizada, e inovadora, oferecemos o melhor para sua
-                    empresa!</p>
-            </div>
-
-            <div class="service">
-                <h2>Identidade Visual</h2>
-                <p>Somos especialistas em criar identidades visuais que elevem sua marca, desenvolvemos logotipos de
-                    acordo com o seu produto e seu gosto, garantindo uma identidade única para marca.</p>
-            </div>
-
-            <div class="service">
-                <h2>Design de Interface</h2>
-                <p>Tenho a especialização de criar interfaces que combinam com a estética e funcionalidade. Transformo a
-                    interação dos seus usuários com soluções visuais que são ao mesmo tempo atraentes e intuitivas.</p>
-            </div>
-
-            <div class="spacer"></div> <!-- Div vazia para criar o espaço central -->
-
-            <div class="service">
-                <h2>Video Maker</h2>
-                <p>Garantimos filmagens completas do seu evento e do seu conteúdo digital.</p>
-            </div>
-        </section>
+            <section class="form-section" id="contato">
+                <div class="form-container">
+                    <h1>Contato</h1>
+                    <form action="envia_formulario.php" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="objetivos">Objetivos:</label>
+                            <input type="text" id="objetivos" name="objetivos">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="servico">Serviço Desejado:</label>
+                            <select id="servico" name="servico">
+                                <option value="servico1">Excel</option>
+                                <option value="servico2">Técnico em Montagem e Manutenção de Computadores</option>
+                                <option value="servico3">Marketing</option>
+                                <option value="servico4">Web Designer</option>
+                                <option value="servico5">Designer Gráfico</option>
+                            </select>
+                        </div>
+    
+                        <button type="submit">Enviar</button>
+                    </form>
+    
 
 
     </main>
@@ -202,11 +206,12 @@
         </div>
 
         <ul class="list">
+            
             <a href="#pagina-inicial">Início</a>
-                <a href="#sobremim">Sobre</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#conatos">Contato</a>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#habilidades">Serviços</a>
         </ul>
 
     </footer>
