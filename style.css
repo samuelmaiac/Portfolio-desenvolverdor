@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px); }
+    25% { transform: translate(-1px, -2px); }
+    50% { transform: translate(-1px, 2px); }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+
+.shake {
+    animation: shake 0.s;
+}
+
 /* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; 
 }
 
 
@@ -168,9 +180,9 @@ header {
     }
 
     & header a,
-    .text-content h1,
+    .text-content h3,
     .about-text {
-        color: rgb(0, 47, 255);
+        color: rgb(255, 255, 255);
     }
 
     & header a:hover {
@@ -238,7 +250,7 @@ header {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    text-align: center;
+    text-align: end;
     transition: 2s;
 
 }
@@ -281,27 +293,36 @@ main {
 
 /* Estilo do círculo */
 .circle img {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 /* Texto principal */
+
 .text-content {
-    & h1 {
-        font-family: "Inconsolata", monospace;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente, se a altura permitir */
+    height: 100vh; /* Ajuste conforme necessário, para centralização vertical */
+    
+    h1 {
+        font-family: "Impact", "Arial Black", sans-serif;
         font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: 100;
+        font-weight: normal; /* Mantido como normal */
+        font-style: normal; /* Mantido como normal */
         font-size: 2.5rem;
-        color: #333;
+        color: #000000;
         text-transform: uppercase;
         letter-spacing: 5px;
-        text-decoration: 2px underline;
+        text-decoration: underline 2px; /* Mantido a sintaxe correta */
         text-underline-offset: 5px;
         margin-bottom: 10%;
+        text-align: center; /* Centraliza o texto dentro do h1 */
     }
+}
 
     & p {
         font-size: 1.6rem;
@@ -310,7 +331,7 @@ main {
         margin-top: 0.5rem;
         letter-spacing: 1px;
     }
-}
+
 
 /* Ícones sociais */
 .social-icons {
@@ -350,7 +371,7 @@ main {
 .skills h2,
 .about-me h2 {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; 
     margin-bottom: 20px;
 }
 
@@ -569,7 +590,7 @@ main {
 }
 
 .service p {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; 
     font-size: 16px;
     line-height: 1.5;
 }
@@ -579,7 +600,7 @@ main {
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: #3b5f3687;
+    background-color: #2d7e77;
     backdrop-filter: blur(10px);
 }
 
@@ -771,8 +792,8 @@ main {
 
     .circle img {
         align-items: center;
-        margin-left: 10%;
-        width: 200px;
+        margin-left: 8%;
+        width: 150px;
         height: 200px;
     }
 
